@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+      "story": {
+          "type": "string"
+      },
+      "title": {
+        "type": "string"
+      }
+    },
+    "required": ["story", "title"]
+  }

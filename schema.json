@@ -1,0 +1,97 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "option A": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "answer": {
+                    "type": "boolean",
+                    "enum": [true, false]
+                  },
+                  "reasons": {
+                    "type": "string"
+                  }
+                },
+                "required": ["value", "answer", "reasons"]
+              },
+              "option B": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "answer": {
+                    "type": "boolean",
+                    "enum": [true, false]
+                  },
+                  "reasons": {
+                    "type": "string"
+                  }
+                },
+                "required": ["value", "answer", "reasons"]
+              },
+              "option C": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "answer": {
+                    "type": "boolean",
+                    "enum": [true, false]
+                  },
+                  "reasons": {
+                    "type": "string"
+                  }
+                },
+                "required": ["value", "answer", "reasons"]
+              },
+              "option D": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  },
+                  "answer": {
+                    "type": "boolean",
+                    "enum": [true, false]
+                  },
+                  "reasons": {
+                    "type": "string"
+                  }
+                },
+                "required": ["value", "answer", "reasons"]
+              }
+            },
+            "required": ["option A", "option B", "option C", "option D"]
+          },
+          "hint1": {
+            "type": "string"
+          },
+          "hint2": {
+            "type": "string"
+          },
+          "hint3": {
+            "type": "string"
+          }
+        },
+        "required": ["question", "options", "hint1", "hint2", "hint3"]
+      }
+    }
+  },
+  "required": ["data"]
+}
